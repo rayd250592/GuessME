@@ -41,14 +41,25 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="GuessMe" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48">
+            	<Run Text="Guess"/>
+            	<Run Text=" The Number"/>
+            </TextBlock>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox x:Name="userno" HorizontalAlignment="Left" Height="79" Margin="151,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
-            <Button Content="Guess" HorizontalAlignment="Left" Margin="172,516,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-            <TextBlock x:Name="response" HorizontalAlignment="Left" Margin="133,120,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="103" Width="185"/>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFC14545" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBox InputScope="Number" x:Name="userno" HorizontalAlignment="Left" Height="79" Margin="151,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+            <Button Content="Guess" HorizontalAlignment="Left" Margin="165,413,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <TextBlock x:Name="response" HorizontalAlignment="Left" Margin="165,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="103" Width="185" Foreground="#FFFFFDFD"/>
+            <Button Content="Generate Number" HorizontalAlignment="Left" Margin="97,536,0,0" VerticalAlignment="Top" Width="253" Click="Button_Click_1"/>
+            <TextBlock x:Name="no" HorizontalAlignment="Left" Margin="62,58,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Visibility="Collapsed"/>
 
         </Grid>
 
