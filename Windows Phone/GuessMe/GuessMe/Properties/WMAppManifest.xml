@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{a9621f62-190e-403f-bbc0-82cfe0f9ce16}" Title="Guess The Number" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="GuessMe author" Description="Sample description" Publisher="GuessMe" PublisherID="{2805e5d5-5b2a-4a5d-a369-99563c9a2d5d}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{a9621f62-190e-403f-bbc0-82cfe0f9ce16}" Title="Pick The Number" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="GuessMe author" Description="Sample description" Publisher="GuessMe" PublisherID="{2805e5d5-5b2a-4a5d-a369-99563c9a2d5d}">
+    <IconPath IsRelative="true" IsResource="false">Assets\Tiles\30x30.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />

@@ -94,7 +94,7 @@ namespace GuessMe
                 }
 
 
-                
+                userno.Text = "";    
 
             }
 
